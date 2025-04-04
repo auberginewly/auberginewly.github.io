@@ -1,0 +1,3 @@
+[submodule "themes/instapaper"]
+	path = themes/instapaper
+	url = https://github.com/techmovie/hexo-theme-instapaper.git
