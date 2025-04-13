@@ -1,8 +1,190 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible"><meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1,user-scalable=no"><meta name="renderer" content="webkit"><meta name="color-scheme" content="dark light"><meta name="author" content="John Doe"><meta name="description" content=""><meta name="keywords" content=""><title>基础算法之排序</title><link rel="icon" type="image/x-icon" href="/images/favicon.ico"><link rel="stylesheet" href="//at.alicdn.com/t/font_3242539_utq6ykfq7z.css"><link rel="stylesheet" light-src="https://cdn.staticfile.org/highlight.js/11.5.0/styles/github.min.css" dark-src="https://cdn.staticfile.org/highlight.js/11.5.0/styles/github-dark.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif" as="font"><link href="/style/index.css" rel="stylesheet"><meta name="generator" content="Hexo 7.3.0"></head><body><header class="page-header"><nav><ul class="router-list"><li class="nav-item"> <a href="/">主页</a></li><li class="nav-item"> <a href="/archives/">归档</a></li><li class="nav-item"> <a href="/atom.xml">RSS</a></li></ul><div class="mode-switch"><span class="iconfont icon-DarkTheme"></span></div></nav></header><main><section class="main-content"><section class="post-page"><div class="title-bar"><h1>基础算法之排序</h1><div class="post-info"><span>2025-04-13 02:55:31</span><span class="tags"><a href="/tags/%E7%AE%97%E6%B3%95/">#算法</a></span></div></div><article> <div class="content"><h1 id="为什么要开始这个章节"><a href="#为什么要开始这个章节" class="headerlink" title="为什么要开始这个章节"></a>为什么要开始这个章节</h1><p>蓝桥杯捐款了，痛定思痛开始好好学算法，太丢脸了ww</p>
 <p>跟着acwing的y神继续学！！！！！</p>
 <p>加油加油www</p>
-<h1 id="排序的本质理解"><a href="#排序的本质理解" class="headerlink" title="排序的本质理解"></a>排序的本质理解</h1><h1 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h1><p>快速排序的理解</p>
-<h1 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h1></div></article><div class="copyright-wrapper"><p>原文作者:<a href="http://example.com">John Doe</a></p><p>原文链接:<a href="http://example.com/2025/04/13/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E4%B9%8B%E6%8E%92%E5%BA%8F/">基础算法之排序</a></p><p>发表日期: 2025-04-13 02:55:31</p><p>更新日期: 2025-04-13 03:01:43</p><p>版权声明: 本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p></div><div class="post-pager"><div class="prev"></div><div class="next"> <a href="/2025/04/13/Mac%E5%88%A9%E7%94%A8homebrew%E8%BF%9B%E8%A1%8C%E5%A4%9A%E7%89%88%E6%9C%ACGo%E5%88%87%E6%8D%A2/" title="Mac利用homebrew进行多版本Go切换">下一篇 Mac利用homebrew进行多版本Go切换</a></div></div><link rel="stylesheet" href="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.css"/><script src="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.js"></script><div id="gitalk-container"></div><script>new Gitalk({
+<h1 id="排序的本质理解"><a href="#排序的本质理解" class="headerlink" title="排序的本质理解"></a>排序的本质理解</h1><ul>
+<li>快排：把两边切开分别排序，再切开递归，本质是分治</li>
+</ul>
+<h1 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h1><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">quick_sort</span>(<span class="params">arr</span>): <span class="comment"># 定义快排的函数，输入为一个数组</span></span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(arr) &lt;= <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> arr <span class="comment"># 判断输入的数组如果小于等于一个元素就返回本身不用排序</span></span><br><span class="line">    pivot = arr[ <span class="built_in">len</span>(arr) // <span class="number">2</span> ] <span class="comment"># 定义一个参照的元素povit为arr列表中间元素</span></span><br><span class="line">    left = [x <span class="keyword">for</span> x <span class="keyword">in</span> arr <span class="keyword">if</span> x &lt; pivot] <span class="comment"># left列表如果x比参照pivot小就把其输入到其中</span></span><br><span class="line">    middle = [x <span class="keyword">for</span> x <span class="keyword">in</span> arr <span class="keyword">if</span> x == pivot] <span class="comment"># middle就是pivot</span></span><br><span class="line">    right = [x <span class="keyword">for</span> x <span class="keyword">in</span> arr <span class="keyword">if</span> x &gt; pivot] <span class="comment"># right列表如果x比参照pivot大就把其输入到其中</span></span><br><span class="line">    <span class="keyword">return</span> quick_sort(left) + middle + quick_sort(right) <span class="comment"># 递归左右直到排序完全并返回</span></span><br><span class="line">    </span><br><span class="line">n = <span class="built_in">int</span>(<span class="built_in">input</span>()) <span class="comment"># 输入数组长度并转换为int</span></span><br><span class="line">arr = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split())) <span class="comment"># 输入数组元素以空格分开并全部为int形成列表</span></span><br><span class="line"></span><br><span class="line">sorted_arr = quick_sort(arr) <span class="comment"># 把快排结果储存在sorted_arr当中</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot; &quot;</span>.join(<span class="built_in">map</span>(<span class="built_in">str</span>,sorted_arr))) <span class="comment"># 以空格的形式输出字符串列表</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="一些python的用法更新"><a href="#一些python的用法更新" class="headerlink" title="一些python的用法更新"></a>一些python的用法更新</h2><ul>
+<li><p>一些需要注意的用法</p>
+<ul>
+<li><p>列表推导式</p>
+<p>好的，这个问题非常关键！让我们深入理解列表推导式的语法，特别是为什么 <code>for</code> 前面有一个 <code>x</code>。</p>
+<h3 id="列表推导式的基本结构"><a href="#列表推导式的基本结构" class="headerlink" title="列表推导式的基本结构"></a>列表推导式的基本结构</h3><p>列表推导式的基本结构如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[expression <span class="keyword">for</span> item <span class="keyword">in</span> iterable <span class="keyword">if</span> condition]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong><code>expression</code></strong>：这是你希望每个元素变成的样子，或者说是处理每个元素的结果。通常这是你想要生成的结果。</li>
+<li><strong><code>item</code></strong>：这是迭代过程中的每个元素，代表你从 <code>iterable</code> 中获取的元素。</li>
+<li><strong><code>iterable</code></strong>：这是你要遍历的对象，通常是一个列表、元组、字符串等。</li>
+<li><strong><code>condition</code></strong>（可选）：这是一个过滤条件，只有满足这个条件的元素才会被包含在最终的列表中。</li>
+</ul>
+<h3 id="为什么第一个-for-前有一个-x？"><a href="#为什么第一个-for-前有一个-x？" class="headerlink" title="为什么第一个 for 前有一个 x？"></a>为什么第一个 <code>for</code> 前有一个 <code>x</code>？</h3><p>在你的代码中：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">left = [x <span class="keyword">for</span> x <span class="keyword">in</span> arr <span class="keyword">if</span> x &lt; pivot]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>第一个 <code>x</code></strong> 是 <strong>表达式部分</strong>。它表示你希望列表推导式结果中的每个元素应该是什么。这里，<code>x</code> 代表你希望新列表中的每个元素直接是 <code>arr</code> 中小于 <code>pivot</code> 的元素。</li>
+<li><strong><code>for x in arr</code></strong> 是 <strong>迭代部分</strong>，表示你要遍历 <code>arr</code> 中的每个元素，并将它们赋值给 <code>x</code> 。</li>
+<li><strong><code>if x &lt; pivot</code></strong> 是 <strong>过滤条件部分</strong>，它表示你只想把那些小于 <code>pivot</code> 的元素放入新列表 <code>left</code>。</li>
+</ul>
+<h3 id="解释-x-for-x-in-arr-部分"><a href="#解释-x-for-x-in-arr-部分" class="headerlink" title="解释 x for x in arr 部分"></a>解释 <code>x for x in arr</code> 部分</h3><ul>
+<li><code>for x in arr</code> 表示遍历 <code>arr</code> 数组中的每一个元素，并将当前的元素赋值给 <code>x</code>。这个 <code>x</code> 是一个 <strong>占位符</strong>，代表当前的元素。</li>
+<li>在列表推导式中，<code>x</code> 会出现在 <strong><code>for</code> 语句前</strong>，它表示生成的新列表中每一个元素的值。换句话说，<strong><code>x</code> 是你要生成的新列表中的元素</strong>。</li>
+</ul>
+<h3 id="举个例子"><a href="#举个例子" class="headerlink" title="举个例子"></a>举个例子</h3><p>假设 <code>arr = [3, 6, 8, 10, 1, 2, 1]</code>，<code>pivot = 6</code>。执行这行代码时：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">left = [x <span class="keyword">for</span> x <span class="keyword">in</span> arr <span class="keyword">if</span> x &lt; <span class="number">6</span>]</span><br></pre></td></tr></table></figure>
+
+<p><strong>执行步骤</strong>：</p>
+<ol>
+<li><code>x</code> 会依次取 <code>arr</code> 中的每个元素：<ul>
+<li><code>x = 3</code>，满足 <code>3 &lt; 6</code>，所以 <code>3</code> 被加入到 <code>left</code>。</li>
+<li><code>x = 6</code>，不满足 <code>6 &lt; 6</code>，所以 <code>6</code> 不被加入。</li>
+<li><code>x = 8</code>，不满足 <code>8 &lt; 6</code>，所以 <code>8</code> 不被加入。</li>
+<li><code>x = 10</code>，不满足 <code>10 &lt; 6</code>，所以 <code>10</code> 不被加入。</li>
+<li><code>x = 1</code>，满足 <code>1 &lt; 6</code>，所以 <code>1</code> 被加入到 <code>left</code>。</li>
+<li><code>x = 2</code>，满足 <code>2 &lt; 6</code>，所以 <code>2</code> 被加入到 <code>left</code>。</li>
+<li><code>x = 1</code>，满足 <code>1 &lt; 6</code>，所以 <code>1</code> 被加入到 <code>left</code>。</li>
+</ul>
+</li>
+</ol>
+<p>最终，<code>left</code> 变成了 <code>[3, 1, 2, 1]</code>。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>第一个 <code>x</code> 代表了我们想要生成的新列表中的元素。它位于 <code>for</code> 语句之前，因为它定义了列表推导式的“输出”，即新的列表中的元素是什么。而 <code>for x in arr</code> 则是指定我们遍历 <code>arr</code> 数组并从中选取元素 <code>x</code>。</p>
+</li>
+<li><p><code>list()</code> 函数</p>
+<p>Python 中的 <code>list()</code> 也是一个内置函数，用于将其他可迭代对象（如元组、字符串、字典等）转换为列表。</p>
+</li>
+<li><p><code>join</code> 是 Python 字符串类型的一个方法，用于将 <strong>可迭代对象</strong>（如列表、元组、集合等）中的元素连接成一个字符串，并且你可以指定一个 <strong>分隔符</strong>，这个分隔符会插入到每两个元素之间。</p>
+<h3 id="join-方法的基本语法："><a href="#join-方法的基本语法：" class="headerlink" title="join 方法的基本语法："></a><code>join</code> 方法的基本语法：</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">separator.join(iterable)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong><code>separator</code></strong>：指定连接符，即在每个元素之间插入的字符串。可以是任何字符串（例如空格、逗号、下划线等）。</li>
+<li><strong><code>iterable</code></strong>：这是你想要连接的可迭代对象（如列表、元组、集合等）。它的元素通常需要是字符串类型，或者可以通过 <code>str()</code> 转换为字符串。</li>
+</ul>
+<h3 id="join-方法的工作原理："><a href="#join-方法的工作原理：" class="headerlink" title="join 方法的工作原理："></a><code>join</code> 方法的工作原理：</h3><ol>
+<li><code>join</code> 方法将遍历 <code>iterable</code> 中的每个元素。</li>
+<li>然后，它会将元素连接成一个字符串，每个元素之间使用指定的 <code>separator</code> 作为分隔符。</li>
+<li>最终返回一个新的连接后的字符串。</li>
+</ol>
+<h3 id="示例："><a href="#示例：" class="headerlink" title="示例："></a>示例：</h3><ol>
+<li><p><strong>基本使用：</strong><br>假设我们有一个字符串列表，想要将它们通过空格连接成一个字符串。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">words = [<span class="string">&quot;Hello&quot;</span>, <span class="string">&quot;world&quot;</span>, <span class="string">&quot;Python&quot;</span>]</span><br><span class="line">result = <span class="string">&quot; &quot;</span>.join(words)</span><br><span class="line"><span class="built_in">print</span>(result)</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hello world Python</span><br></pre></td></tr></table></figure>
+
+<p>这里，<code>&quot; &quot;</code> 是分隔符，它将列表中的元素用空格连接起来。</p>
+</li>
+<li><p><strong>使用其他分隔符：</strong><br>你可以指定不同的分隔符，如逗号、下划线等。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">words = [<span class="string">&quot;apple&quot;</span>, <span class="string">&quot;banana&quot;</span>, <span class="string">&quot;cherry&quot;</span>]</span><br><span class="line">result = <span class="string">&quot;, &quot;</span>.join(words)</span><br><span class="line"><span class="built_in">print</span>(result)</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apple, banana, cherry</span><br></pre></td></tr></table></figure>
+
+<p>这里，<code>&quot;, &quot;</code> 是分隔符，元素之间用逗号加空格连接。</p>
+</li>
+<li><p><strong>没有分隔符：</strong><br>如果你不想在元素之间添加任何分隔符，可以使用空字符串 <code>&quot;&quot;</code>。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">words = [<span class="string">&quot;H&quot;</span>, <span class="string">&quot;e&quot;</span>, <span class="string">&quot;l&quot;</span>, <span class="string">&quot;l&quot;</span>, <span class="string">&quot;o&quot;</span>]</span><br><span class="line">result = <span class="string">&quot;&quot;</span>.join(words)</span><br><span class="line"><span class="built_in">print</span>(result)</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hello</span><br></pre></td></tr></table></figure>
+
+<p>这里，空字符串 <code>&quot;&quot;</code> 作为分隔符，将列表中的元素直接连接成一个没有空格的字符串。</p>
+</li>
+<li><p><strong>连接数字（需要转换为字符串）：</strong><br>如果列表中的元素是非字符串类型（例如数字），你需要将它们转换为字符串类型。可以使用 <code>map(str, iterable)</code> 来实现转换。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">numbers = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]</span><br><span class="line">result = <span class="string">&quot;-&quot;</span>.join(<span class="built_in">map</span>(<span class="built_in">str</span>, numbers))</span><br><span class="line"><span class="built_in">print</span>(result)</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1-2-3-4</span><br></pre></td></tr></table></figure>
+
+<p>这里，<code>map(str, numbers)</code> 会将每个数字转换为字符串，然后再用 <code>&quot;-&quot;</code> 连接它们。</p>
+</li>
+<li><p><strong>处理空列表：</strong><br>如果列表是空的，<code>join</code> 方法会返回一个空字符串。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">empty_list = []</span><br><span class="line">result = <span class="string">&quot; &quot;</span>.join(empty_list)</span><br><span class="line"><span class="built_in">print</span>(result)  <span class="comment"># 输出 &#x27;&#x27;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h3><ul>
+<li><strong><code>join</code></strong> 方法是将一个可迭代对象中的元素连接成一个字符串，元素之间用指定的分隔符连接。</li>
+<li>它的语法是：<code>separator.join(iterable)</code>，其中 <code>separator</code> 是你希望使用的连接符。</li>
+<li><code>join</code> 适用于字符串类型的元素，若元素是其他类型（如数字），需要先将其转换为字符串。</li>
+</ul>
+<p>这个方法非常高效，尤其是当你需要连接大量字符串时，它比直接使用 <code>+</code> 更高效。</p>
+</li>
+<li><p>map 把字符串列表转换为整数</p>
+</li>
+<li><p>其他用法</p>
+</li>
+<li><p><code>map()</code> 是 Python 中的一个内置函数，用于 <strong>将一个函数应用到可迭代对象（如列表、元组等）中的每个元素</strong>，并返回一个迭代器，包含了应用函数后的结果。</p>
+<h3 id="map-的基本语法："><a href="#map-的基本语法：" class="headerlink" title="map() 的基本语法："></a><code>map()</code> 的基本语法：</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">map</span>(function, iterable, ...)</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong><code>function</code></strong>：一个函数，可以是内置的函数、lambda 表达式或用户定义的函数，表示你希望应用于每个元素的操作。</li>
+<li><strong><code>iterable</code></strong>：一个可迭代对象（如列表、元组、字符串等），<code>map()</code> 会将 <code>function</code> 应用到其中的每个元素。</li>
+<li>如果有多个可迭代对象作为参数，<code>map()</code> 会将它们一一配对，并将 <code>function</code> 应用到对应元素的组合上。</li>
+</ul>
+<h3 id="map-的工作流程："><a href="#map-的工作流程：" class="headerlink" title="map() 的工作流程："></a><code>map()</code> 的工作流程：</h3><ol>
+<li><code>map()</code> 会将传入的 <code>function</code> 应用到 <code>iterable</code> 中的每一个元素。</li>
+<li>它返回一个 <strong>迭代器</strong>，而不是直接返回一个列表（如果需要可以通过 <code>list()</code> 或 <code>tuple()</code> 等转换为具体的类型）。</li>
+<li>你可以使用 <code>for</code> 循环或 <code>list()</code> 函数来遍历这个迭代器，获取每个元素的结果。</li>
+</ol>
+<h3 id="示例：-1"><a href="#示例：-1" class="headerlink" title="示例："></a>示例：</h3><ol>
+<li><p><strong>简单的例子：</strong></p>
+<p>假设我们有一个列表，想将其中的每个数字乘以 2。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">numbers = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line">result = <span class="built_in">map</span>(<span class="keyword">lambda</span> x: x * <span class="number">2</span>, numbers)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(result))</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[2, 4, 6, 8, 10]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>这里，<code>lambda x: x * 2</code> 是一个匿名函数，表示对每个元素执行 <code>x * 2</code> 操作。</li>
+<li><code>map()</code> 会将这个操作应用到 <code>numbers</code> 列表中的每个元素。</li>
+<li>由于 <code>map()</code> 返回的是一个迭代器，我们使用 <code>list()</code> 将其转换为列表，并打印输出。</li>
+</ul>
+</li>
+<li><p><strong>将字符串转换为数字：</strong></p>
+<p>如果你有一个包含数字字符串的列表，想将它们转换为整数：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">str_numbers = [<span class="string">&quot;1&quot;</span>, <span class="string">&quot;2&quot;</span>, <span class="string">&quot;3&quot;</span>, <span class="string">&quot;4&quot;</span>]</span><br><span class="line">result = <span class="built_in">map</span>(<span class="built_in">int</span>, str_numbers)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(result))</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[1, 2, 3, 4]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>这里，<code>int</code> 是一个内置函数，它将每个字符串转换为整数。</li>
+<li><code>map(int, str_numbers)</code> 会把 <code>str_numbers</code> 列表中的每个字符串应用 <code>int</code> 函数，得到一个整数列表。</li>
+</ul>
+</li>
+<li><p><strong>多个可迭代对象：</strong></p>
+<p><code>map()</code> 也可以接受多个可迭代对象。如果传入多个可迭代对象，<code>map()</code> 会将它们的元素按位置进行配对，并将 <code>function</code> 应用于每一组元素。例如：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">numbers1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">numbers2 = [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</span><br><span class="line">result = <span class="built_in">map</span>(<span class="keyword">lambda</span> x, y: x + y, numbers1, numbers2)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(result))</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[5, 7, 9]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>这里，<code>map()</code> 会将 <code>numbers1</code> 和 <code>numbers2</code> 中对应位置的元素配对：<code>(1, 4)</code>, <code>(2, 5)</code>, <code>(3, 6)</code>，然后对每一对元素应用 <code>lambda x, y: x + y</code>，即将它们相加。</li>
+</ul>
+</li>
+</ol>
+<h3 id="map-返回的是一个迭代器"><a href="#map-返回的是一个迭代器" class="headerlink" title="map() 返回的是一个迭代器"></a><code>map()</code> 返回的是一个迭代器</h3><p>需要注意的是，<code>map()</code> 返回的是一个 <strong>迭代器</strong>，不是一个列表。因此，在使用时，我们通常需要用 <code>list()</code> 函数将其转换为列表，或者使用 <code>for</code> 循环来遍历。</p>
+<h3 id="例子总结："><a href="#例子总结：" class="headerlink" title="例子总结："></a>例子总结：</h3><ol>
+<li><p><strong>应用函数到每个元素：</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">numbers = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">result = <span class="built_in">map</span>(<span class="keyword">lambda</span> x: x * <span class="number">2</span>, numbers)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(result))  <span class="comment"># 输出 [2, 4, 6]</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>将字符串转换为数字：</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">str_numbers = [<span class="string">&quot;10&quot;</span>, <span class="string">&quot;20&quot;</span>, <span class="string">&quot;30&quot;</span>]</span><br><span class="line">result = <span class="built_in">map</span>(<span class="built_in">int</span>, str_numbers)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(result))  <span class="comment"># 输出 [10, 20, 30]</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>多个可迭代对象：</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">nums1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">nums2 = [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</span><br><span class="line">result = <span class="built_in">map</span>(<span class="keyword">lambda</span> x, y: x + y, nums1, nums2)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(result))  <span class="comment"># 输出 [5, 7, 9]</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="总结：-1"><a href="#总结：-1" class="headerlink" title="总结："></a>总结：</h3><ul>
+<li><code>map()</code> 是一个高效的函数式编程工具，能够将一个函数应用到多个元素上，并返回一个新的迭代器。</li>
+<li>它通常用于将某种操作应用于一个或多个可迭代对象的每个元素，像是转换数据类型、数学运算等。</li>
+<li>返回值是一个迭代器，你可以使用 <code>list()</code>、<code>tuple()</code> 或直接迭代它来获取结果。</li>
+</ul>
+<p>希望这个解释能帮你理解 <code>map()</code> 的使用！</p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h1></div></article><div class="copyright-wrapper"><p>原文作者:<a href="http://example.com">John Doe</a></p><p>原文链接:<a href="http://example.com/2025/04/13/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E4%B9%8B%E6%8E%92%E5%BA%8F/">基础算法之排序</a></p><p>发表日期: 2025-04-13 02:55:31</p><p>更新日期: 2025-04-13 23:32:49</p><p>版权声明: 本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p></div><div class="post-pager"><div class="prev"></div><div class="next"> <a href="/2025/04/13/Mac%E5%88%A9%E7%94%A8homebrew%E8%BF%9B%E8%A1%8C%E5%A4%9A%E7%89%88%E6%9C%ACGo%E5%88%87%E6%8D%A2/" title="Mac利用homebrew进行多版本Go切换">下一篇 Mac利用homebrew进行多版本Go切换</a></div></div><link rel="stylesheet" href="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.css"/><script src="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.js"></script><div id="gitalk-container"></div><script>new Gitalk({
   clientID: '',
   clientSecret: '',
   repo: 'git@github.com:auberginewly/auberginewly.github.io.git',
