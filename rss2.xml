@@ -9,13 +9,13 @@
     <atom:link href="https://auberginewly.site/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Thu, 17 Apr 2025 18:10:03 GMT</pubDate>
+    <pubDate>Thu, 17 Apr 2025 18:15:30 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>12_给butterfly主题的hexo博客配置rss订阅</title>
-      <link>https://auberginewly.site/2025/04/18/12-%E7%BB%99butterfly%E4%B8%BB%E9%A2%98%E7%9A%84hexo%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AErss%E8%AE%A2%E9%98%85/</link>
-      <guid>https://auberginewly.site/2025/04/18/12-%E7%BB%99butterfly%E4%B8%BB%E9%A2%98%E7%9A%84hexo%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AErss%E8%AE%A2%E9%98%85/</guid>
+      <title>给butterfly主题的hexo博客配置rss订阅</title>
+      <link>https://auberginewly.site/2025/04/18/12_RssConfiguration/</link>
+      <guid>https://auberginewly.site/2025/04/18/12_RssConfiguration/</guid>
       <pubDate>Thu, 17 Apr 2025 17:53:19 GMT</pubDate>
       
         
@@ -34,7 +34,7 @@
       <category domain="https://auberginewly.site/tags/%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE/">博客配置</category>
       
       
-      <comments>https://auberginewly.site/2025/04/18/12-%E7%BB%99butterfly%E4%B8%BB%E9%A2%98%E7%9A%84hexo%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AErss%E8%AE%A2%E9%98%85/#disqus_thread</comments>
+      <comments>https://auberginewly.site/2025/04/18/12_RssConfiguration/#disqus_thread</comments>
       
     </item>
     
