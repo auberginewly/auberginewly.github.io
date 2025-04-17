@@ -9,8 +9,34 @@
     <atom:link href="https://auberginewly.site/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Wed, 16 Apr 2025 18:00:12 GMT</pubDate>
+    <pubDate>Thu, 17 Apr 2025 18:10:03 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>12_给butterfly主题的hexo博客配置rss订阅</title>
+      <link>https://auberginewly.site/2025/04/18/12-%E7%BB%99butterfly%E4%B8%BB%E9%A2%98%E7%9A%84hexo%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AErss%E8%AE%A2%E9%98%85/</link>
+      <guid>https://auberginewly.site/2025/04/18/12-%E7%BB%99butterfly%E4%B8%BB%E9%A2%98%E7%9A%84hexo%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AErss%E8%AE%A2%E9%98%85/</guid>
+      <pubDate>Thu, 17 Apr 2025 17:53:19 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h1 id=&quot;配置缘由&quot;&gt;&lt;a href=&quot;#配置缘由&quot; class=&quot;headerlink&quot; title=&quot;配置缘由&quot;&gt;&lt;/a&gt;配置缘由&lt;/h1&gt;&lt;p&gt;突然某学长晚上提到关于rss订阅，以前还没了解过这个东西，于是迅速的了解了一下，RSS 的全称是 Really Simple</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h1 id="配置缘由"><a href="#配置缘由" class="headerlink" title="配置缘由"></a>配置缘由</h1><p>突然某学长晚上提到关于rss订阅，以前还没了解过这个东西，于是迅速的了解了一下，RSS 的全称是 Really Simple Syndication（简易信息聚合），它是一种消息来源的格式规范，网站可以按照这种格式规范提供文章的标题、摘要、全文等信息给订阅用户，用户可以通过订阅不同网站 RSS 链接的方式将不同的信息源进行聚合，在一个工具里阅读这些内容。</p><p>简单来说，RSS 就是一种订阅某个网站内容更新的协议。这种略显「古老」的协议在社交媒体和聚合阅读的冲击下日渐式微，大多数人都不知道这个东西的存在了，更者在算法推荐为各大厂商盈利的当下，rss的订阅显得有那么一些反算法。</p><p>但是rss的阅读精简模式可以让我们专注于想要阅读的内容，在信息裹挟的洪流下可以精准迅速的获得想要的内容，像是一种在pick的过程，捣鼓捣鼓还是很好玩的。</p><h1 id="配置步骤"><a href="#配置步骤" class="headerlink" title="配置步骤"></a>配置步骤</h1><h2 id="step1-下载hexo支持的rss插件"><a href="#step1-下载hexo支持的rss插件" class="headerlink" title="step1 下载hexo支持的rss插件"></a>step1 下载hexo支持的rss插件</h2><p>hexo的rss插件，叫<strong>hexo-generator-feed</strong>，在hexo文件夹终端下载插件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure><h2 id="step2-根目录配置"><a href="#step2-根目录配置" class="headerlink" title="step2 根目录配置"></a>step2 根目录配置</h2><p>然后在根目录中的_config.yml中添加如下配置</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">feed:  </span><br><span class="line">  enable: true  </span><br><span class="line">  type: rss2  </span><br><span class="line">  path: rss2.xml  </span><br><span class="line">  limit: 0</span><br></pre></td></tr></table></figure><p><strong>官网还说明了一些其他的参数，如：</strong></p><ul><li>enable: 默认开启可以省略</li><li>type: RSS的类型(atom&#x2F;rss2)</li><li>path: 文件路径，默认是 atom.xml&#x2F;rss2.xml</li><li>limit: 展示文章的数量,使用 0 或则 false 代表展示全部</li><li>hub: 如果使用不到可以为空</li><li>content: （可选）设置 true 可以在 RSS 文件中包含文章全部内容，默认：false</li><li>content_limit: （可选）摘要中使用的帖子内容的默认长度。 仅在内容设置为false且未显示自定义帖子描述时才使用。</li><li>content_limit_delim :（可选）如果content_limit用于缩短帖子内容，则仅在达到字符限制之前在此分隔符的最后一次出现处剪切。默认不使用。</li><li>icon: (可选）自定义图标。默认为主配置中指定的电子邮件头像。</li><li>autodiscovery: 添加提要自动发现，默认开启</li><li>template : 自定义模板路径。该文件用于生成 xml 文件</li></ul><h2 id="step3-主题配置"><a href="#step3-主题配置" class="headerlink" title="step3 主题配置"></a>step3 主题配置</h2><p>然后去主题的_config.yml中添加配置</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">rss:</span> <span class="string">/rss2.xml</span></span><br></pre></td></tr></table></figure><p>这样你在用hexo g生成静态网页的时候会在public文件夹中（也就是你静态网页文件夹中）生成一个rss2.xml文件</p><h2 id="step4-添加主页rss按钮（可选）"><a href="#step4-添加主页rss按钮（可选）" class="headerlink" title="step4 添加主页rss按钮（可选）"></a>step4 添加主页rss按钮（可选）</h2><p>如果你想让别人知道你的RSS链接，可以在主题中的social中添加如下配置（就是在那侧边栏个人资料下面添加一个图标并链接到你的RSS文件）</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">fas fa-rss:</span> <span class="string">/rss2.xml</span> <span class="string">||</span> <span class="string">RSS</span> <span class="string">||</span> <span class="string">&#x27;#ee802f&#x27;</span></span><br></pre></td></tr></table></figure><p>并且添加了rss的橘黄配色（）</p><h1 id="re"><a href="#re" class="headerlink" title="re"></a>re</h1><p>好晚了，迅速结束配置，过几天再来捣鼓rss阅读器，感觉很好玩的样子ahh</p>]]></content:encoded>
+      
+      
+      <category domain="https://auberginewly.site/categories/%E7%90%90%E7%A2%8E%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/">琐碎问题解决</category>
+      
+      
+      <category domain="https://auberginewly.site/tags/%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE/">博客配置</category>
+      
+      
+      <comments>https://auberginewly.site/2025/04/18/12-%E7%BB%99butterfly%E4%B8%BB%E9%A2%98%E7%9A%84hexo%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AErss%E8%AE%A2%E9%98%85/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>SQL学习笔记</title>
