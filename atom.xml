@@ -6,7 +6,7 @@
   <link href="https://auberginewly.site/atom.xml" rel="self"/>
   
   <link href="https://auberginewly.site/"/>
-  <updated>2025-04-18T09:09:21.545Z</updated>
+  <updated>2025-04-20T18:45:06.679Z</updated>
   <id>https://auberginewly.site/</id>
   
   <author>
@@ -15,6 +15,71 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2025.4 第四周</title>
+    <link href="https://auberginewly.site/2025/04/21/16_2025-4-week4/"/>
+    <id>https://auberginewly.site/2025/04/21/16_2025-4-week4/</id>
+    <published>2025-04-20T18:38:30.000Z</published>
+    <updated>2025-04-20T18:45:06.679Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="周报小结"><a href="#周报小结" class="headerlink" title="周报小结"></a>周报小结</h1><h2 id="blog"><a href="#blog" class="headerlink" title="blog"></a>blog</h2><p>给博客配置了静态域名和rss订阅，可以看看我之前的文章。</p><h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><p>详细深入了解了一下git的用法和github关联，就是github desktop和gitee俩远程库那种的推送还没了解详细，可以看看之前的文章。<br>本来想开sql的学习，奈何发现时间不大够。<br>还有课内摆了没怎么学，哎，要考大物了，继续突击，下礼拜要好好把课内捡回来了。</p><h2 id="大创结稿"><a href="#大创结稿" class="headerlink" title="大创结稿"></a>大创结稿</h2><p>赶稿与ppt终于改了一版又一版，截稿等待结果咯。</p><h2 id="后续想干的"><a href="#后续想干的" class="headerlink" title="后续想干的"></a>后续想干的</h2><p>写完cursor使用指北。<br>quickstart in pytorch机器学习深度学习及其方向。<br>前后端基础的学习，与产品去中心化的分享。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;周报小结&quot;&gt;&lt;a href=&quot;#周报小结&quot; class=&quot;headerlink&quot; title=&quot;周报小结&quot;&gt;&lt;/a&gt;周报小结&lt;/h1&gt;&lt;h2 id=&quot;blog&quot;&gt;&lt;a href=&quot;#blog&quot; class=&quot;headerlink&quot; title=&quot;blog&quot;&gt;&lt;/a</summary>
+      
+    
+    
+    
+    <category term="周报" scheme="https://auberginewly.site/categories/%E5%91%A8%E6%8A%A5/"/>
+    
+    
+    <category term="一些想法" scheme="https://auberginewly.site/tags/%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>cursor使用指北</title>
+    <link href="https://auberginewly.site/2025/04/19/15_About_Using_Cursor/"/>
+    <id>https://auberginewly.site/2025/04/19/15_About_Using_Cursor/</id>
+    <published>2025-04-19T08:39:49.000Z</published>
+    <updated>2025-04-19T10:52:46.645Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="下载与设置"><a href="#下载与设置" class="headerlink" title="下载与设置"></a>下载与设置</h1><p>官网 <a href="https://www.cursor.com/cn">https://www.cursor.com/cn</a></p><h2 id="终端启动配置"><a href="#终端启动配置" class="headerlink" title="终端启动配置"></a>终端启动配置</h2><p>因为我之前有设置<code>.code</code>或者<code>code</code>启动vscode，所以这边是设置了<code>cursor</code>来快捷启动cursor。</p><h2 id="安装中文插件"><a href="#安装中文插件" class="headerlink" title="安装中文插件"></a>安装中文插件</h2><p><img src="/../images/image-20250419170638991.png" alt="image-20250419170638991"></p><h1 id="核心功能"><a href="#核心功能" class="headerlink" title="核心功能"></a>核心功能</h1><h2 id="tab补全"><a href="#tab补全" class="headerlink" title="tab补全"></a>tab补全</h2><p>光标预测，tab补全。</p><h2 id="agent-ask-manualk"><a href="#agent-ask-manualk" class="headerlink" title="agent&#x2F;ask&#x2F;manualk"></a>agent&#x2F;ask&#x2F;manualk</h2><p>Cursor 是一个为程序员设计的 AI 编程编辑器，它的 <code>agent/ask/manual</code> 模式，是三种不同的交互方式，用来控制 AI 如何与你的代码协作。下面是这三种模式的区别和用途：</p><hr><h3 id="🧠-1-agent-模式（自动代理模式）"><a href="#🧠-1-agent-模式（自动代理模式）" class="headerlink" title="🧠 1. agent 模式（自动代理模式）"></a>🧠 1. <code>agent</code> 模式（自动代理模式）</h3><p><strong>作用：AI 自动分析并主动修改代码，像“自动驾驶”。</strong></p><ul><li>你只需要输入一句目标（如“优化这段代码的性能”），它会自动扫描当前文件甚至项目上下文，判断应该怎么改，然后<strong>直接帮你修改代码</strong>。</li><li>适合你信任 AI、希望它自己动手的情况。</li></ul><p><strong>典型用途：</strong></p><ul><li>重构一段复杂代码</li><li>修复 bug</li><li>实现一个小功能</li><li>自动写测试代码</li></ul><hr><h3 id="💬-2-ask-模式（提问模式）"><a href="#💬-2-ask-模式（提问模式）" class="headerlink" title="💬 2. ask 模式（提问模式）"></a>💬 2. <code>ask</code> 模式（提问模式）</h3><p><strong>作用：AI 像“答疑助手”，它不会修改代码，只会回答问题或解释。</strong></p><ul><li>你问：“这段代码是干嘛的？” 它就解释。</li><li>你说：“帮我写个 for 循环模板。” 它就写个代码片段出来，不会动你当前文件。</li><li>你自己决定要不要把回答贴进去。</li></ul><p><strong>典型用途：</strong></p><ul><li>看不懂别人的代码，想请 AI 翻译</li><li>想让它列出一个实现思路、代码片段，但不想让它自动改项目</li></ul><hr><h3 id="✍️-3-manual-模式（手动模式）"><a href="#✍️-3-manual-模式（手动模式）" class="headerlink" title="✍️ 3. manual 模式（手动模式）"></a>✍️ 3. <code>manual</code> 模式（手动模式）</h3><p><strong>作用：你自己选中代码片段，告诉 AI 应该改哪里，它</strong>只看你选中的部分**。**</p><ul><li>AI 只分析你手动选择的代码块，不会读整个文件上下文，修改范围也有限。</li><li>修改建议出来后，你手动选择是否替换原代码。</li></ul><p><strong>适合：</strong></p><ul><li>小范围快速编辑</li><li>对 AI 不太放心、怕它“乱动”时</li><li>做精准控制，比如“只改这个函数，不动别的”</li></ul><hr><h3 id="简单总结："><a href="#简单总结：" class="headerlink" title="简单总结："></a>简单总结：</h3><table><thead><tr><th>模式</th><th>控制程度</th><th>修改行为</th><th>适合场景</th></tr></thead><tbody><tr><td><code>agent</code></td><td>最自动</td><td>直接修改代码</td><td>自动修复、重构、实现功能</td></tr><tr><td><code>ask</code></td><td>最安全</td><td>不修改代码</td><td>提问、解释、获取示例</td></tr><tr><td><code>manual</code></td><td>半自动</td><td>可选修改</td><td>精准修改、代码片段替换</td></tr></tbody></table><hr><p>如果你正在用 Cursor 写代码，建议：</p><ul><li>熟悉 <code>ask</code> 模式，随时提问查资料</li><li>用 <code>manual</code> 模式做小改动</li><li>用 <code>agent</code> 模式快速完成重复、结构性任务（比如“把这段代码转成 TypeScript”）</li></ul><h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><p>cmd+I agent模式<br>cmd+L ask模式</p><h2 id="模型推荐"><a href="#模型推荐" class="headerlink" title="模型推荐"></a>模型推荐</h2><h3 id="综合领域问答理解-ask"><a href="#综合领域问答理解-ask" class="headerlink" title="综合领域问答理解 ask"></a>综合领域问答理解 ask</h3><p>gpt-4o</p><h3 id="代码-agent暂时只支持Claude模型"><a href="#代码-agent暂时只支持Claude模型" class="headerlink" title="代码 agent暂时只支持Claude模型"></a>代码 agent暂时只支持Claude模型</h3><p>claude 3.7 sonnet<br>gemini 2.5 pro</p><blockquote><p>复杂功能拆解，一步步喂给agent，提取上下文，还可以运行一些终端的命令之类。<br>简单功能问ask就好了，速度快一些。</p></blockquote><h2 id="关于-菜单"><a href="#关于-菜单" class="headerlink" title="关于@菜单"></a>关于@菜单</h2><p><img src="/../images/image-20250419174226865.png" alt="image-20250419174226865"></p><ul><li>文件&#x2F;文件夹</li><li>代码</li><li>文档</li><li>Git</li><li>历史对话</li><li>cursor规则</li><li>终端</li><li>Linter errors</li><li>Linting 指的是<strong>通过专用的分析软件对 源代码 进行分析，查找出源代码中存在的语法和样式错误的过程</strong>。</li></ul><h3 id="Docs文档"><a href="#Docs文档" class="headerlink" title="Docs文档"></a>Docs文档</h3><p>可以添加链接然后存文档</p><p><img src="/../images/image-20250419184244787.png" alt="image-20250419184244787"></p><p>输入链接</p><p><img src="/../images/image-20250419184310824.png" alt="image-20250419184310824"><br>即可</p><blockquote><p>注意引用文档的不同。<br>例如 <a href="https://docs.cursor.com/">https://docs.cursor.com/</a> 会引用当前这个页面的文档及其子文档，但 <a href="https://docs.cursor.com/">https://docs.cursor.com</a> 只会引用当前的文档。<br>就是最后一个斜杠有无的区别。</p></blockquote><p>临时链接解析上下文可以直接<code>@+链接地址</code></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;下载与设置&quot;&gt;&lt;a href=&quot;#下载与设置&quot; class=&quot;headerlink&quot; title=&quot;下载与设置&quot;&gt;&lt;/a&gt;下载与设置&lt;/h1&gt;&lt;p&gt;官网 &lt;a href=&quot;https://www.cursor.com/cn&quot;&gt;https://www.cursor.</summary>
+      
+    
+    
+    
+    <category term="学习笔记" scheme="https://auberginewly.site/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="CS" scheme="https://auberginewly.site/tags/CS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Quickstart in Pytorch</title>
+    <link href="https://auberginewly.site/2025/04/19/14_Quickstart-in-Pytorch/"/>
+    <id>https://auberginewly.site/2025/04/19/14_Quickstart-in-Pytorch/</id>
+    <published>2025-04-19T05:01:06.000Z</published>
+    <updated>2025-04-19T05:01:50.347Z</updated>
+    
+    
+    
+    
+    <category term="学习笔记" scheme="https://auberginewly.site/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="LLM" scheme="https://auberginewly.site/tags/LLM/"/>
+    
+  </entry>
   
   <entry>
     <title>4.18 小记_人能感受多少回夏天</title>
@@ -171,7 +236,7 @@
     <link href="https://auberginewly.site/2025/04/15/7_win11%E4%B8%8Banaconda%E7%9A%84%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98/"/>
     <id>https://auberginewly.site/2025/04/15/7_win11%E4%B8%8Banaconda%E7%9A%84%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98/</id>
     <published>2025-04-15T01:08:32.000Z</published>
-    <updated>2025-04-15T01:16:23.221Z</updated>
+    <updated>2025-04-19T00:19:02.545Z</updated>
     
     <content type="html"><![CDATA[<h1 id="下载anaconda"><a href="#下载anaconda" class="headerlink" title="下载anaconda"></a>下载anaconda</h1><p><a href="https://www.anaconda.com/">https://www.anaconda.com</a></p><h1 id="然后配置"><a href="#然后配置" class="headerlink" title="然后配置"></a>然后配置</h1><h2 id="修改虚拟环境默认在c盘"><a href="#修改虚拟环境默认在c盘" class="headerlink" title="修改虚拟环境默认在c盘"></a>修改虚拟环境默认在c盘</h2><p>修改配置文件路径<br>“C:\Users\wlyy\.condarc”<br><img src="/../images/image-20250415091142236.png" alt="image-20250415091142236"><br>修改在文件后加上</p><p><img src="/../images/image-20250415091216626.png" alt="image-20250415091216626"></p><p>这样创建虚拟环境就在指定路径下面</p><h2 id="创建虚拟环境并配置需要的包"><a href="#创建虚拟环境并配置需要的包" class="headerlink" title="创建虚拟环境并配置需要的包"></a>创建虚拟环境并配置需要的包</h2><p>&#x3D;&#x3D;已换源&#x3D;&#x3D;</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">conda create --name myenv python=3.10.13 -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br><span class="line"></span><br><span class="line">conda activate myenv <span class="comment">#激活 myenv可以替换成简单的项目的名字 我用的是ai_test</span></span><br><span class="line"></span><br><span class="line">conda install numpy=1.26.4 -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br><span class="line">conda install pandas=2.2.2 -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br><span class="line">conda install scikit-learn=1.5.1 -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br><span class="line">conda --no-plugins install matplotlib=3.9.2 -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br><span class="line">conda --no-plugins install seaborn=0.13.2 -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br><span class="line">conda --no-plugins install tensorflow=2.10.0 -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br><span class="line">conda --no-plugins install jupyter=1.0.0 -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br></pre></td></tr></table></figure><p>退出环境</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda deactivate</span><br></pre></td></tr></table></figure><p>进入</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda activate xxx(虚拟环境名字)</span><br></pre></td></tr></table></figure><p>&#x3D;&#x3D;安装这些包的时候记得一定要进入到虚拟环境当中 不要在base里安装了 这些纯纯无用功&#x3D;&#x3D;</p><h2 id="CondaValueError-You-have-chosen-a-non-default-solver-backend-libmamba-but-it-was-not-recognized-Choose-one-of-classic-报错"><a href="#CondaValueError-You-have-chosen-a-non-default-solver-backend-libmamba-but-it-was-not-recognized-Choose-one-of-classic-报错" class="headerlink" title="CondaValueError: You have chosen a non-default solver backend (libmamba) but it was not recognized. Choose one of: classic 报错"></a>CondaValueError: You have chosen a non-default solver backend (libmamba) but it was not recognized. Choose one of: classic 报错</h2><p>解决方式<br>如果不想使用 <code>libmamba</code><br>强制切换默认解析器</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 临时使用 classic（仅当前命令生效）</span></span><br><span class="line">conda install --solver=classic 你的包名</span><br><span class="line"></span><br><span class="line"><span class="comment"># 永久切换回 classic</span></span><br><span class="line">conda config --<span class="built_in">set</span> solver classic</span><br></pre></td></tr></table></figure><p>这样就解决了报错</p><h2 id="在pycharm里配置conda环境找不到conda环境-这个离谱问题需要离谱的解决方式"><a href="#在pycharm里配置conda环境找不到conda环境-这个离谱问题需要离谱的解决方式" class="headerlink" title="在pycharm里配置conda环境找不到conda环境 这个离谱问题需要离谱的解决方式"></a>在pycharm里配置conda环境找不到conda环境 这个离谱问题需要离谱的解决方式</h2><p><a href="https://blog.csdn.net/m0_73262230/article/details/144005565">https://blog.csdn.net/m0_73262230/article/details/144005565</a><br>参考<br><img src="/../images/image-20250415091253429.png" alt="image-20250415091253429"><br>settings添加解释器</p><p><img src="/../images/image-20250415091317800.png" alt="image-20250415091317800"><br>选择现有的<br>然后选择conda.bat<br>再选择创建好的虚拟环境<br>就可以了</p><h1 id="一个报错-导致无法运行出对比的窗口"><a href="#一个报错-导致无法运行出对比的窗口" class="headerlink" title="一个报错 导致无法运行出对比的窗口"></a>一个报错 导致无法运行出对比的窗口</h1><p>OMP: Error #15: Initializing libiomp5md.dll, but found libiomp5 already initialized. OMP: Hint This means that multiple copies of the OpenMP runtime have been linked into the program. That is dangerous, since it can degrade performance or cause incorrect results. The best thing to do is to ensure that only a single OpenMP runtime is linked into the process, e.g. by avoiding static linking of the OpenMP runtime in any library. As an unsafe, unsupported, undocumented workaround you can set the environment variable KMP_DUPLICATE_LIB_OK&#x3D;TRUE to allow the program to continue to execute, but that may cause crashes or silently produce incorrect results. For more information, please see <a href="http://www.intel.com/software/products/support/">http://www.intel.com/software/products/support/</a>.</p><p>参考的解决方式<br><a href="https://blog.csdn.net/peacefairy/article/details/110528012">https://blog.csdn.net/peacefairy/article/details/110528012</a><br>使用的方法一解决的<br>在虚拟环境其中找到了俩libiomp5md.dll<br>做好了路径和备份</p><p><img src="/../images/image-20250415091433748.png" alt="image-20250415091433748"></p><p><img src="/../images/image-20250415091511742.png" alt="image-20250415091511742"></p><p><img src="/../images/image-20250415091535353.png" alt="image-20250415091535353"></p><p>然后删除了第二个<br>运行<br>恢复正常<br><img src="/../images/image-20250415091605432.png" alt="image-20250415091605432"><br>可以成功预测 试验成功<br><img src="/../images/image-20250415091619427.png" alt="image-20250415091619427"><br>这个是之前的报错的</p>]]></content>
     
@@ -185,6 +250,8 @@
     
     <category term="琐碎问题解决" scheme="https://auberginewly.site/categories/%E7%90%90%E7%A2%8E%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
     
+    
+    <category term="LLM" scheme="https://auberginewly.site/tags/LLM/"/>
     
   </entry>
   
