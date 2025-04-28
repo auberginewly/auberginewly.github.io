@@ -6,7 +6,7 @@
   <link href="https://auberginewly.site/atom.xml" rel="self"/>
   
   <link href="https://auberginewly.site/"/>
-  <updated>2025-04-27T09:09:02.621Z</updated>
+  <updated>2025-04-28T17:42:09.117Z</updated>
   <id>https://auberginewly.site/</id>
   
   <author>
@@ -15,6 +15,49 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>50projects50days（持续更新）</title>
+    <link href="https://auberginewly.site/2025/04/29/23_50projects50days_is_updating/"/>
+    <id>https://auberginewly.site/2025/04/29/23_50projects50days_is_updating/</id>
+    <published>2025-04-28T17:41:20.000Z</published>
+    <updated>2025-04-28T17:42:09.117Z</updated>
+    
+    
+    
+    
+    <category term="学习笔记" scheme="https://auberginewly.site/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="CS" scheme="https://auberginewly.site/tags/CS/"/>
+    
+    <category term="frontend" scheme="https://auberginewly.site/tags/frontend/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2025.4 第四周</title>
+    <link href="https://auberginewly.site/2025/04/28/22_2025-4-week4/"/>
+    <id>https://auberginewly.site/2025/04/28/22_2025-4-week4/</id>
+    <published>2025-04-28T09:08:59.000Z</published>
+    <updated>2025-04-28T17:43:33.390Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="这一周干了什么"><a href="#这一周干了什么" class="headerlink" title="这一周干了什么"></a>这一周干了什么</h1><p>研究了下 github desktop 确实图形化可以简化一堆 git 的命令。<br>把前端三剑客大致的过完了，然后想给 50projects50days 每天来一个？<br>还开了一点点的 go 的基础。<br>一些练习都上传到了我的 github 仓库里。<br>然后快速入门了下区块链和 web3 的知识，联系到了金融。<br>还写了篇稿子联系产品设计进行分享。<br>传送门：<br><a href="https://ncuhomer.feishu.cn/wiki/R5I7wR9jkiOW1ckl5pwcbT9knfd?from=from_copylink">Web3 产品设计的另一种打开方式</a></p><h1 id="没干的"><a href="#没干的" class="headerlink" title="没干的"></a>没干的</h1><p>就是说给博客评论配置图床失败，后面有时间再看看喵。<br>高数线代大物落下了好多进度哇。<br>还有算法颓废，有点对这个抗拒啊喂。<br>还有一个月就要来的雅思还没开始准备。<br>后面可能就是暂且把 go 搁置，然后前端的练习，其他的方向的学习，绩点以及我的雅思还有四级。</p><h1 id="这周的状态"><a href="#这周的状态" class="headerlink" title="这周的状态"></a>这周的状态</h1><p>其实这周的状态很糟糕我得说，之前天天熬夜还暴饮暴食，哎哎，然后整个人非常的郁闷和压力，于是乎还写了篇抱怨的博客，简直是觉得自己好无力。我喜欢把一些博客先挂着但是没学，比如 pytorch 关于机器学习那一块的，还有 sql 之类的，都是搁置的，感觉时间不够用哇诶。<br>还是得调整下状态，或许可以加一些运动进入到日常当中？<br>晚安喵。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;这一周干了什么&quot;&gt;&lt;a href=&quot;#这一周干了什么&quot; class=&quot;headerlink&quot; title=&quot;这一周干了什么&quot;&gt;&lt;/a&gt;这一周干了什么&lt;/h1&gt;&lt;p&gt;研究了下 github desktop 确实图形化可以简化一堆 git 的命令。&lt;br&gt;把前端三剑客</summary>
+      
+    
+    
+    
+    <category term="周报" scheme="https://auberginewly.site/categories/%E5%91%A8%E6%8A%A5/"/>
+    
+    
+    <category term="一些想法" scheme="https://auberginewly.site/tags/%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>明明什么也没干但是很累</title>
@@ -147,11 +190,11 @@
   </entry>
   
   <entry>
-    <title>2025.4 第四周</title>
-    <link href="https://auberginewly.site/2025/04/21/16_2025-4-week4/"/>
-    <id>https://auberginewly.site/2025/04/21/16_2025-4-week4/</id>
+    <title>2025.4 第三周</title>
+    <link href="https://auberginewly.site/2025/04/21/16_2025-4-week3/"/>
+    <id>https://auberginewly.site/2025/04/21/16_2025-4-week3/</id>
     <published>2025-04-20T18:38:30.000Z</published>
-    <updated>2025-04-21T08:39:37.556Z</updated>
+    <updated>2025-04-28T09:06:27.235Z</updated>
     
     <content type="html"><![CDATA[<h1 id="周报小结"><a href="#周报小结" class="headerlink" title="周报小结"></a>周报小结</h1><h2 id="blog"><a href="#blog" class="headerlink" title="blog"></a>blog</h2><p>给博客配置了静态域名和rss订阅，可以看看我之前的文章。</p><h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><p>详细深入了解了一下git的用法和github关联，就是github desktop和gitee俩远程库那种的推送还没了解详细，可以看看之前的文章。<br>本来想开sql的学习，奈何发现时间不大够。<br>还有课内摆了没怎么学，哎，要考大物了，继续突击，下礼拜要好好把课内捡回来了。</p><h2 id="大创结稿"><a href="#大创结稿" class="headerlink" title="大创结稿"></a>大创结稿</h2><p>赶稿与ppt终于改了一版又一版，截稿等待结果咯。</p><h2 id="后续想干的"><a href="#后续想干的" class="headerlink" title="后续想干的"></a>后续想干的</h2><p>写完cursor使用指北。<br>quickstart in pytorch机器学习深度学习及其方向。<br>前后端基础的学习，与产品去中心化的分享。</p>]]></content>
     
@@ -437,11 +480,11 @@
   </entry>
   
   <entry>
-    <title>2025.4 第三周</title>
-    <link href="https://auberginewly.site/2025/04/14/4_2025-4-%E7%AC%AC%E4%B8%89%E5%91%A8/"/>
-    <id>https://auberginewly.site/2025/04/14/4_2025-4-%E7%AC%AC%E4%B8%89%E5%91%A8/</id>
+    <title>2025.4 第二周</title>
+    <link href="https://auberginewly.site/2025/04/14/4_2025-4-week2/"/>
+    <id>https://auberginewly.site/2025/04/14/4_2025-4-week2/</id>
     <published>2025-04-13T18:20:54.000Z</published>
-    <updated>2025-04-21T08:38:55.917Z</updated>
+    <updated>2025-04-28T09:06:19.140Z</updated>
     
     <content type="html"><![CDATA[<h1 id="周报的开始"><a href="#周报的开始" class="headerlink" title="周报的开始"></a>周报的开始</h1><p>一直很想找一个机会有可以周报的分享形式</p><p>直到现在</p><p><img src="/../images/image-20250414023739548.png" alt="image-20250414023739548"></p><p>这个点了终于把这想配的多年的博客给配的7788了</p><p>于是想了想 我可以写一点什么呢</p><h1 id="这一周干了什么"><a href="#这一周干了什么" class="headerlink" title="这一周干了什么"></a>这一周干了什么</h1><h2 id="在家园"><a href="#在家园" class="headerlink" title="在家园"></a>在家园</h2><p>作为春招进产品组的新人</p><p>第一个项目是hackathon的idea构想</p><p>然后就是调研、产品需求文档PRD、原型图figma</p><p>大致耗时4天</p><p>认识了几个研发佬 感觉团队做项目还是很有意思的</p><h2 id="大创"><a href="#大创" class="headerlink" title="大创"></a>大创</h2><p>写了市场分析和前景方向 并完成了初稿</p><h2 id="coding"><a href="#coding" class="headerlink" title="coding"></a>coding</h2><p>下了goland并想着怎么配下go环境版本切换之类的</p><ul><li><p>可以看看go的官方文档捏 这个土拨鼠好可爱ww</p></li><li><p><a href="https://go-lang.org.cn/doc/tutorial/">https://go-lang.org.cn/doc/tutorial/</a></p></li></ul><p>continue ai插件</p><p>github copilot学生包申请</p><p>后续有时间会去学习backend的</p><p>等我哇</p>]]></content>
     
