@@ -1,0 +1,95 @@
+:root {
+    /* :root 是 CSS 中的根选择器，表示文档的根元素，一般用于定义全局变量（如颜色） */
+    --line-border-fill: #3498db;      /* 变量：激活状态下的蓝色 */
+    --line-border-empty: #e0e0e0;     /* 变量：未激活状态下的灰色 */
+}
+
+* {
+    /* * 是通配选择器，表示“选中所有元素”，这里用来统一设置盒模型 */
+    box-sizing: border-box;          /* 所有元素的宽度包含 padding 和 border，不会超出设定宽度 */
+}
+
+body {
+    background-color: #f6f7fb;       /* 设置页面背景颜色 */
+    display: flex;                   /* 使用 flex 让内容居中 */
+    justify-content: center;        /* 水平居中对齐 */
+    align-items: center;            /* 垂直居中对齐 */
+    height: 100vh;                  /* 高度为 100% 视口高度 */
+    overflow: hidden;               /* 防止内容溢出，隐藏滚动条 */
+}
+
+.container {
+    /* .container 是类选择器，表示 class="container" 的元素 */
+    text-align: center;             /* 容器内文本居中 */
+}
+
+.progress_container {
+    /* .progress_container 也是类选择器，表示进度条区域的容器 */
+    display: flex;                  /* 使用 flex 横向排列圆圈 */
+    justify-content: space-between;/* 圆圈平均分布在两侧，中间留空（有问题的核心点） */
+    align-items: center;           /* 垂直方向居中对齐 */
+    position: relative;            /* 设置相对定位，供子元素使用绝对定位 */
+    margin-bottom: 30px;           /* 与下方按钮留出空隙 */
+    max-width: 100%;               /* 最大宽度为父元素宽度 */
+    width: 350px;                  /* 设置固定宽度 */
+}
+
+/* ::before 是伪元素选择器，在 .progress_container 元素“前”插入内容，常用于背景线 */
+.progress_container::before {
+    content: '';                   /* 必须有 content 属性，哪怕是空字符串 */
+    background-color: var(--line-border-empty); /* 灰色背景线 */
+    position: absolute;            /* 使用绝对定位铺满容器 */
+    top: 50%;                      /* 距顶部 50%，配合 transform 做垂直居中 */
+    left: 0;                       /* 从左边开始 */
+    transform: translateY(-50%);   /* 向上移动自身高度的 50%，实现完美垂直居中 */
+    height: 4px;                   /* 设置线条的高度 */
+    width: 100%;                   /* 宽度为容器宽度 */
+    z-index: -1;                   /* 层级调低，放在圆圈下方 */
+}
+
+.progress {
+    /* .progress 是“当前进度”线条，动态变化宽度 */
+    background-color: var(--line-border-fill);  /* 蓝色表示已完成部分 */
+    position: absolute;            /* 使用绝对定位铺在伪元素上面 */
+    top: 50%;                      /* 同样居中 */
+    left: 0;                       /* 从最左侧开始 */
+    transform: translateY(-50%);   /* 垂直居中 */
+    height: 4px;                   /* 线条高度 */
+    width: 0%;                     /* 初始宽度为 0，会由 JS 控制变化 */
+    z-index: -1;                   /* 层级在圆圈后面 */
+}
+
+.circle {
+    /* .circle 是表示步骤圆圈的类选择器 */
+    background-color: #fff;        /* 圆圈背景色为白色 */
+    color: #999;                   /* 数字颜色为灰色 */
+    border-radius: 50%;            /* 设置成圆形 */
+    width: 30px;                   /* 圆圈宽度 */
+    height: 30px;                  /* 圆圈高度 */
+    display: flex;                 /* 使用 flex 实现文字居中 */
+    justify-content: center;      /* 水平居中 */
+    align-items: center;          /* 垂直居中 */
+    border: 3px solid var(--line-border-empty); /* 默认灰色边框 */
+    transition: all 0.4s ease;     /* 添加过渡动画，切换时更平滑 */
+}
+
+/* .circle.active 是带有 active 状态的圆圈的选择器，表示当前步骤 */
+.circle.active {
+    border-color: var(--line-border-fill); /* 激活状态使用蓝色边框 */
+}
+
+.btn:active {
+    /* :active 是伪类选择器，表示按钮被点击时的状态 */
+    transform: scale(0.98);        /* 按钮被按下时稍微缩小，增强点击感 */
+}
+
+.btn:focus {
+    /* :focus 是伪类选择器，表示按钮获得焦点时 */
+    outline: 0;                    /* 去掉默认的浏览器焦点边框 */
+}
+
+.btn:disabled {
+    /* :disabled 是伪类选择器，表示按钮不可点击状态 */
+    background-color: var(--line-border-empty); /* 灰色背景表示不可用 */
+    cursor: not-allowed;           /* 鼠标变为禁止符号 */
+}
