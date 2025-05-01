@@ -34,7 +34,7 @@ body {
     margin: 10px;
     /* 相对定位 */
     position: relative;
-    transition: all 300ms ease-in;
+    transition: all 300ms ease-in-out;
     /* 添加阴影只在右下角 */
     /* 给元素添加一个向下偏移10px、宽松模糊20px、半透明黑色的阴影。 */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
