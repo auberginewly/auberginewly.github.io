@@ -1,0 +1,64 @@
+* {
+    /* 标准盒模型 */
+    box-sizing: border-box; 
+}
+
+body {
+    display: flex;
+    /* 让元素在容器里面上下居中。 */
+    align-items: center;
+    /* 让元素在容器里面左右居中。 */
+    justify-content: center;
+    /* 类似于100%宽度 */
+    /* 把这个元素的高度设置成100% 的视口高度（Viewport Height）。
+    vh 是一个单位，叫做 viewport height，意思是视口高度的1%。 */
+    height: 100vh; 
+    overflow: hidden;
+    margin: 0;
+} 
+
+.container {
+    display: flex;
+    width: 90vh;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    border-radius: 50px; /* 圆角 */
+    color: white;
+    /* 鼠标变成手 */
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    /* 相对定位 */
+    position: relative;
+    transition: all 300ms ease-in-out;
+    /* 添加阴影只在右下角 */
+    /* 给元素添加一个向下偏移10px、宽松模糊20px、半透明黑色的阴影。 */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.panel h3 {
+    font-size: 2;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    /* 透明度0 */
+    opacity: 0;
+}
+
+/* panel和active两个类支持用空格分开 */
+.panel.active {
+    /* 布局等分 */
+    flex: 5;
+}
+
+.panel.active h3 {
+    /* 透明度1 */
+    opacity: 1;
+    /* 过渡时间 0.2s opacity透明度 ease-in 先慢后快 0.2 延迟0.2 */
+    transition: opacity 0.2s ease-in 0.2s;
+}

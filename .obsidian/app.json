@@ -6,5 +6,6 @@
     "scaffolds/"
   ],
   "newFileLocation": "folder",
-  "newFileFolderPath": "source/_posts"
+  "newFileFolderPath": "source/_posts",
+  "attachmentFolderPath": "source/images"
 }

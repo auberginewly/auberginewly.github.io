@@ -1,0 +1,19 @@
+- class_name: 友情链接
+  class_desc: welcome
+  link_list:
+    - name: Ylin
+      link: https://ylin07.github.io/
+      avatar: /images/ylin.png
+      descr: 书山有路勤为径，学海无涯苦作舟
+    - name: baozongwi
+      link: https://baozongwi.xyz/
+      avatar: /images/bao.png
+      descr: 天地不仁，以万物为刍狗
+    - name: 梦辰
+      link: https://mc.mimeng.top/
+      avatar: /images/meng.png
+      descr: 全栈开发
+    - name: 许木
+      link: https://xudamu.github.io/
+      avatar: /images/xm.png
+      descr: 知识海边捡贝壳的人
