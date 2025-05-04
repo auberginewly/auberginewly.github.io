@@ -1,0 +1,44 @@
+name: Deploy Hexo Blog to GitHub Pages
+
+on:
+  push:
+    branches:
+      - source  # 监听 `source` 分支的 push 事件
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: source  # 检出 `source` 分支
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # 设置 Node.js 版本（根据需要选择版本）
+
+      - name: Install dependencies
+        run: |
+          npm install -g hexo-cli
+          npm install  # 安装依赖
+
+      - name: Clean Hexo
+        run: hexo clean  # 清理 Hexo 生成的文件
+
+      - name: Build Hexo site
+        run: hexo generate  # 生成博客文件
+
+      - name: Deploy to GitHub Pages
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "3127221787@qq.com"  # 设置邮箱
+          git add .
+          git commit -m "Deploy to GitHub Pages"
+          git push origin source:main  # 将生成的文件推送到 `main` 分支
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 自动生成的 GitHub Token，用于认证
+
