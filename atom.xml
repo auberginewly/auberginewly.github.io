@@ -6,7 +6,7 @@
   <link href="https://auberginewly.site/atom.xml" rel="self"/>
   
   <link href="https://auberginewly.site/"/>
-  <updated>2025-05-01T16:28:24.766Z</updated>
+  <updated>2025-05-04T17:30:28.872Z</updated>
   <id>https://auberginewly.site/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>github actions</title>
+    <link href="https://auberginewly.site/2025/05/05/github-actions/"/>
+    <id>https://auberginewly.site/2025/05/05/github-actions/</id>
+    <published>2025-05-04T17:30:28.000Z</published>
+    <updated>2025-05-04T17:30:28.872Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>实现 butterfly 主题 hexo 博客内嵌 html 预览形式</title>
