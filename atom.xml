@@ -6,7 +6,7 @@
   <link href="https://auberginewly.site/atom.xml" rel="self"/>
   
   <link href="https://auberginewly.site/"/>
-  <updated>2025-05-04T17:30:28.872Z</updated>
+  <updated>2025-07-02T06:22:03.297Z</updated>
   <id>https://auberginewly.site/</id>
   
   <author>
@@ -17,15 +17,26 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>github actions</title>
-    <link href="https://auberginewly.site/2025/05/05/github-actions/"/>
-    <id>https://auberginewly.site/2025/05/05/github-actions/</id>
-    <published>2025-05-04T17:30:28.000Z</published>
-    <updated>2025-05-04T17:30:28.872Z</updated>
+    <title>互联网产品我们该怎么去做</title>
+    <link href="https://auberginewly.site/2025/07/02/25_about_product/"/>
+    <id>https://auberginewly.site/2025/07/02/25_about_product/</id>
+    <published>2025-07-02T05:34:06.000Z</published>
+    <updated>2025-07-02T06:22:03.297Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>在高速发展的互联网浪潮中，<strong>产品经理</strong>扮演着至关重要的角色，他们是连接用户、技术、市场与商业价值的枢纽。要成为一名优秀的互联网产品经理，不仅需要扎实的产品知识，更需要高超的沟通协作能力。</p></blockquote><h1 id="互联网产品的核心特性"><a href="#互联网产品的核心特性" class="headerlink" title="互联网产品的核心特性"></a>互联网产品的核心特性</h1><p>理解互联网产品的本质是产品经理的基石。它们普遍具备以下特点：</p><ul><li><strong>敏捷开发与快速迭代</strong>：互联网产品强调“小步快跑”，通过快速发布、持续验证来适应市场变化和用户需求，不断优化。</li><li><strong>用户体验至上</strong>：在激烈的市场竞争中，卓越的<strong>用户体验（UX）是产品能否吸引并留住用户的关键。这包括信息架构</strong>、<strong>交互设计</strong>和<strong>视觉设计</strong>的方方面面。</li><li><strong>数据驱动决策</strong>：互联网产品从上线伊始便会产生海量数据。产品经理必须学会利用数据分析工具，解读<strong>活跃用户（DAU）</strong>、<strong>留存率</strong>、<strong>转化率</strong>、<strong>GMV</strong>等<strong>核心指标</strong>，通过数据洞察用户行为，指导产品优化。</li><li><strong>规模效应与网络效应</strong>：许多互联网产品，特别是社交和平台类产品，随着用户数量的增长，其价值会呈几何级数增长，形成强大的壁垒。</li><li><strong>技术依赖性</strong>：互联网产品与技术紧密相连，产品经理虽不需成为技术专家，但应具备足够的技术理解力，以便与研发团队高效沟通。</li><li><strong>多元变现模式</strong>：互联网产品的盈利模式多样，如广告、订阅服务、电商佣金、增值服务等，产品经理需清晰其商业逻辑。</li></ul><h1 id="产品经理的核心技能"><a href="#产品经理的核心技能" class="headerlink" title="产品经理的核心技能"></a>产品经理的核心技能</h1><p>要驾驭互联网产品的复杂性，产品经理需要掌握一系列核心技能：</p><ul><li><strong>用户研究与画像</strong>：深入理解目标用户群，通过用户访谈、问卷调查等方式，构建精准的<strong>用户画像</strong>。熟悉<strong>AARRR模型</strong>（获取、激活、留存、收益、推荐），指导用户增长策略。</li><li><strong>产品设计与原型</strong>：能够将抽象需求转化为具象的设计方案。熟练使用原型工具（如Figma、Sketch），进行高保真原型设计，并理解设计原则。</li><li><strong>数据分析与指标解读</strong>：善用各类<strong>分析工具</strong>，从海量数据中提炼洞察，通过数据验证假设，优化产品功能。</li><li><strong>竞品分析</strong>：不仅要分析竞品的<strong>功能</strong>，更要深挖其<strong>产品定位</strong>、<strong>商业模式</strong>、<strong>运营策略</strong>及<strong>优劣势</strong>，从中学习并寻找自身产品的差异化。</li><li><strong>增长黑客思维</strong>：以<strong>小投入</strong>、<strong>高效率</strong>的方式实现<strong>用户增长</strong>和<strong>产品传播</strong>，将产品融入营销和增长的各个环节。</li><li><strong>项目管理</strong>：在快速迭代的环境下，产品经理需具备强大的<strong>项目管理</strong>能力，有效地<strong>协调研发、设计、运营</strong>等各方资源，确保项目按计划推进。</li></ul><h1 id="实践与案例分析"><a href="#实践与案例分析" class="headerlink" title="实践与案例分析"></a>实践与案例分析</h1><p>理论学习是基础，但实践和案例分析才是提升产品能力的加速器。</p><ul><li><strong>使用与拆解产品</strong>：深入体验各类热门互联网产品，并尝试从产品经理的视角进行<strong>拆解分析</strong>：<ul><li>这个产品解决了什么问题？面向哪些用户？</li><li>它的<strong>核心功能</strong>是什么？用户路径如何？</li><li>它的<strong>商业模式</strong>是什么？</li><li>有哪些值得借鉴的<strong>交互或设计</strong>？</li><li>如果有机会优化，你会怎么做？</li></ul></li><li><strong>活跃于行业社区</strong>：加入<strong>PMCAFF</strong>、<strong>人人都是产品经理</strong>等线上社区，参与讨论，了解行业热点，从同行经验中学习。</li><li><strong>关注行业报告与媒体</strong>：定期阅读权威<strong>行业报告</strong>和科技<strong>媒体</strong>，掌握最新趋势和创新案例。</li></ul><h1 id="互联网产品经理的沟通协作艺术"><a href="#互联网产品经理的沟通协作艺术" class="headerlink" title="互联网产品经理的沟通协作艺术"></a>互联网产品经理的沟通协作艺术</h1><p>成功的互联网产品离不开高效的团队协作。产品经理作为核心枢纽，需要与研发、运营、设计团队建立信任，有效沟通，共同推动产品发展。</p><h3 id="与研发团队的沟通协作"><a href="#与研发团队的沟通协作" class="headerlink" title="与研发团队的沟通协作"></a>与研发团队的沟通协作</h3><p>研发团队是产品落地的基石。产品经理需要确保：</p><ul><li><strong>需求明确性</strong>：提供清晰、完整、无歧义的 PRD（产品需求文档）或用户故事，包含功能描述、业务逻辑、异常处理、数据埋点等细节。</li><li><strong>技术可行性与成本</strong>：在需求阶段就与研发充分讨论，评估技术实现难度、潜在风险及预估开发周期，避免不切实际的需求。</li><li><strong>优先级</strong>：共同明确需求优先级，确保研发资源投入到最有价值的功能上。</li><li><strong>进度同步与Bug管理</strong>：定期沟通项目进展，及时解决开发中的问题，并规范Bug提报和处理流程。</li><li><strong>早期介入与敏捷方法</strong>：邀请研发在产品规划初期参与讨论，利用<strong>敏捷开发</strong>（如Scrum）的机制，如站会、迭代评审、回顾会，保持高效沟通和透明度。</li><li><strong>技术分享与相互尊重</strong>：产品经理适度了解技术栈，理解研发挑战，并始终尊重他们的专业意见。</li></ul><h3 id="与运营团队的沟通协作"><a href="#与运营团队的沟通协作" class="headerlink" title="与运营团队的沟通协作"></a>与运营团队的沟通协作</h3><p>运营团队是产品与用户之间的桥梁。产品经理应：</p><ul><li><strong>明确产品价值与特点</strong>：确保运营充分理解产品的核心价值、目标用户和独特卖点，以便有效推广。</li><li><strong>倾听用户反馈与活动需求</strong>：积极收集运营团队提供的用户反馈，并评估各类<strong>活动需求</strong>对产品的价值。</li><li><strong>提供数据支持</strong>：了解运营对数据监控的需求，在产品设计中预留好<strong>数据埋点</strong>。</li><li><strong>及时同步版本更新</strong>：让运营团队了解新功能和优化点，以便他们进行用户引导。</li><li><strong>共同制定用户增长策略</strong>：与运营团队将产品和运营目标对齐，共同关注用户增长、活跃度、转化率等核心指标。</li></ul><h3 id="与设计团队的沟通协作"><a href="#与设计团队的沟通协作" class="headerlink" title="与设计团队的沟通协作"></a>与设计团队的沟通协作</h3><p>设计团队将抽象需求转化为具象的用户界面和交互体验。产品经理需要：</p><ul><li><strong>明确用户体验目标</strong>：清晰阐述产品解决的痛点、场景和期望的用户体验，而非直接指定设计方案。</li><li><strong>提供用户画像与场景</strong>：帮助设计师理解用户需求和行为模式。</li><li><strong>明确功能优先级与信息架构</strong>：与设计师共同确定合理的信息架构和页面布局。</li><li><strong>遵循设计原则与规范</strong>：确保产品风格一致性。</li><li><strong>迭代与评审</strong>：对设计稿进行评审，提供建设性反馈，确保设计方案符合产品和用户需求。</li><li><strong>保持开放与共创</strong>：鼓励设计师发挥创意，并对他们的专业建议保持开放态度，共同关注用户反馈。</li></ul><h1 id="建立高效沟通协作的关键"><a href="#建立高效沟通协作的关键" class="headerlink" title="建立高效沟通协作的关键"></a>建立高效沟通协作的关键</h1><ul><li><strong>清晰的沟通目标</strong>：每次沟通都应明确要解决的问题和达成的共识。</li><li><strong>换位思考</strong>：理解每个团队的工作性质、目标与挑战。</li><li><strong>建立信任</strong>：真诚沟通，言出必行，承担责任。</li><li><strong>主动性与反馈闭环</strong>：产品经理需主动发起沟通，并确保所有反馈都有明确的接收、处理和回复机制。</li><li><strong>善用工具</strong>：利用项目管理（Jira, Trello）、协作文档（Confluence）、原型（Figma）等工具提升效率。</li></ul><h1 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h1><p><strong>洞察 设计 协作 增长</strong></p><p>其实这个学期下来感知最大的就是，产品给我的感觉很泛，我没有去了解它的具体，只是模仿前人的状态去尽力当好一个好“产品”，泛是其职业特性决定的，产品要求从业者具备很强的<strong>通用性、学习能力和适应性</strong>。虽然概念很泛，但其核心价值始终在于<strong>发现并解决用户问题，通过产品实现商业价值</strong>。我想我也在尝试优化自己的不足，在泛泛之中能握得确切的实践经验。</p><blockquote><p>上述文字是我觉得需要的几个关键点让 AI 优化了一下表述，其实如果让我说产品是什么，我不是很答得上来，但是让我慢下来梳理，我发现，它是一个很不一样的存在。</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;在高速发展的互联网浪潮中，&lt;strong&gt;产品经理&lt;/strong&gt;扮演着至关重要的角色，他们是连接用户、技术、市场与商业价值的枢纽。要成为一名优秀的互联网产品经理，不仅需要扎实的产品知识，更需要高超的沟通协作能力。&lt;/p&gt;
+&lt;/blockquot</summary>
+      
     
     
     
     
+    <category term="产品" scheme="https://auberginewly.site/tags/%E4%BA%A7%E5%93%81/"/>
     
   </entry>
   
@@ -607,9 +618,9 @@
     <link href="https://auberginewly.site/2025/04/04/1_about_me/"/>
     <id>https://auberginewly.site/2025/04/04/1_about_me/</id>
     <published>2025-04-04T11:39:13.000Z</published>
-    <updated>2025-04-21T08:38:39.929Z</updated>
+    <updated>2025-07-02T05:31:13.690Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><ul><li><p>某末2网安专业在读大一学生</p></li><li><p>在某学生工作室产品部门实习</p></li><li><p>上大学前没有接触过计算机</p></li><li><p>所了解的不多 但是会慢慢学习</p></li><li><p>高考发挥失常选手</p></li></ul><h1 id="关于博客"><a href="#关于博客" class="headerlink" title="关于博客"></a>关于博客</h1><ul><li>配置过三次</li><li>大一上hexo（失败）</li><li>寒假gridea（编辑限制）</li><li>大一下hexo<ul><li>主题首先是instapaer 但是代码行有限制</li><li>于是使用了butterfly</li><li>草率的配置了一下（）</li><li>后续待优化ing</li></ul></li></ul><h1 id="想要干的事情"><a href="#想要干的事情" class="headerlink" title="想要干的事情"></a>想要干的事情</h1><h2 id="关于专业"><a href="#关于专业" class="headerlink" title="关于专业"></a>关于专业</h2><ul><li>打过ctf 仅限于了解一些浅薄的misc 并没有坚持下去<ul><li>如果有机会可以继续ctf之旅</li></ul></li><li>以后不一定走网安方向（？<ul><li>或许吧，多摸索摸索</li></ul></li></ul><h2 id="关于选择"><a href="#关于选择" class="headerlink" title="关于选择"></a>关于选择</h2><ul><li>目前是想保研（maybe？</li><li>但是感觉不如就业啊（）</li><li>但是什么技术都不会 还得学习</li></ul><h2 id="关于想学习的"><a href="#关于想学习的" class="headerlink" title="关于想学习的"></a>关于想学习的</h2><ul><li>machinelearning<ul><li>kaggle（？</li></ul></li><li>stuck<ul><li>frontend</li><li>backend</li></ul></li><li>security<ul><li>？</li></ul></li><li>产品<ul><li><a href="https://www.woshipm.com/">https://www.woshipm.com</a></li></ul></li><li>雅思<ul><li>2025.5.29 首考加油哇</li></ul></li></ul><h1 id="碎碎念"><a href="#碎碎念" class="headerlink" title="碎碎念"></a>碎碎念</h1><ul><li>re:感觉时间过的好快啊，马上大二了还什么都不会</li><li>re:还是得把时间安排好不然老大徒伤悲哎哎</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><ul><li><p>某末2网安专业在读大一学生</p></li><li><p>在某学生工作室产品部门</p></li><li><p>上大学前没有接触过计算机</p></li><li><p>所了解的不多 但是会慢慢学习</p></li><li><p>高考发挥失常选手</p></li></ul><h1 id="关于博客"><a href="#关于博客" class="headerlink" title="关于博客"></a>关于博客</h1><ul><li>配置过三次</li><li>大一上hexo（失败）</li><li>寒假gridea（编辑限制）</li><li>大一下hexo<ul><li>主题首先是instapaer 但是代码行有限制</li><li>于是使用了butterfly</li><li>草率的配置了一下（）</li><li>后续待优化ing</li></ul></li></ul><h1 id="想要干的事情"><a href="#想要干的事情" class="headerlink" title="想要干的事情"></a>想要干的事情</h1><h2 id="关于专业"><a href="#关于专业" class="headerlink" title="关于专业"></a>关于专业</h2><ul><li>打过ctf 仅限于了解一些浅薄的misc 并没有坚持下去<ul><li>如果有机会可以继续ctf之旅</li></ul></li><li>以后不一定走网安方向（？<ul><li>或许吧，多摸索摸索</li></ul></li></ul><h2 id="关于选择"><a href="#关于选择" class="headerlink" title="关于选择"></a>关于选择</h2><ul><li>目前是想保研（maybe？</li><li>但是感觉不如就业啊（）</li><li>但是什么技术都不会 还得学习</li></ul><h2 id="关于想学习的"><a href="#关于想学习的" class="headerlink" title="关于想学习的"></a>关于想学习的</h2><ul><li>machinelearning<ul><li>kaggle（？</li></ul></li><li>stuck<ul><li>frontend</li><li>backend</li></ul></li><li>security<ul><li>？</li></ul></li><li>产品<ul><li><a href="https://www.woshipm.com/">https://www.woshipm.com</a></li></ul></li></ul><h1 id="碎碎念"><a href="#碎碎念" class="headerlink" title="碎碎念"></a>碎碎念</h1><ul><li>re:感觉时间过的好快啊，马上大二了还什么都不会</li><li>re:还是得把时间安排好不然老大徒伤悲哎哎</li></ul>]]></content>
     
     
       
@@ -617,9 +628,9 @@
     <summary type="html">&lt;h1 id=&quot;关于我&quot;&gt;&lt;a href=&quot;#关于我&quot; class=&quot;headerlink&quot; title=&quot;关于我&quot;&gt;&lt;/a&gt;关于我&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;某末2网安专业在读大一学生&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;在某学生工作室产品部门实习&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;在某学生工作室产品部门&lt;/p&gt;
 &lt;/li&gt;
-&lt;l</summary>
+&lt;li&gt;</summary>
       
     
     
